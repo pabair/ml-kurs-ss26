@@ -1,2 +1,63 @@
-# ml-kurs-ss26
-ML Kurs SS26 HSKA
+# Einführung in das Maschinelle Lernen
+Code-Repository für den Kurs "Einführung in das Maschinelle Lernen" an der Hochschule Karlsruhe.
+
+## Install Conda
+
+The recommended way to setup your development environment is to use Miniconda:
+
+Download and install Miniconda from [here](https://www.anaconda.com/download/success)
+
+
+## Setup Conda
+
+On Windows, start the application `Anaconda Prompt`. On Mac or Linux, just open a new terminal window.
+
+The following steps are now similar in both OS:
+
+1. Create a new environment for this course:
+
+    `conda create --name ml-course python=3.8`
+
+2. Activate this environment:
+
+    `conda activate ml-course`
+
+3. Install the following packages: numpy, pandas, matplotlib, scikit-learn.
+
+    `conda install numpy pandas matplotlib scikit-learn jupyter seaborn`
+
+4. Test your installation by opening a new jupyter notebook. A new browser window should open.
+
+    `jupyter notebook`
+
+## Get Code Repository
+
+1. Go to [`https://github.com/pabair/ml-kurs-ss26`](https://github.com/pabair/ml-kurs-ss26)
+
+2. Copy the URL of the new Repository
+
+3. In a Terminal, run:  `git clone [URL of repo]`
+
+4. Change into the directory: `cd ml-kurs-ss26`
+
+5. (later) As the original repository gets updated, run `git pull` in the terminal to fetch the changes from Github to your computer
+
+## Alternative Setup in Linux / Windows Subsystem for Linux (WSL)
+
+If you don't want to use Conda, you can also install the packages using pip in a virtual environment:
+
+1. Create a new virtual environment:
+
+    `python3 -m venv venv/`
+
+2. Activate the environment:
+    
+    `source venv/bin/activate`
+
+3. Install the packages:
+   
+    `pip install -r requirements.txt`
+
+4. Start the Jupyter Notebook with `jupyter notebook .`
+
+Instead of `jupyter notebook`, you can also open the project in VSCode (with the Jupyter extension installed) by running `code .` in the terminal and then selecting the venv as the Python interpreter for Jupyter.
